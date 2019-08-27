@@ -76,7 +76,7 @@ def deploy():
         upgrade()
     except:
         db.create_all()
-        upgrade()
+        stamp()
 
     Role.insert_roles()
     User.add_self_follows()
