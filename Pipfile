@@ -23,6 +23,10 @@ flask-httpauth = "*"
 httpie = "*"
 coverage = "*"
 selenium = "*"
+psycopg2 = "*"
+flask-sslify = "*"
+gunicorn = "*"
+waitress = "*"
 
 [requires]
 python_version = "3.7"

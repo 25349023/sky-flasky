@@ -5,3 +5,4 @@ profiler/
 
 *.sqlite
 *.log
+.env

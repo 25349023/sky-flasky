@@ -16,6 +16,8 @@ if os.getenv('FLASK_COVERAGE'):
 app = create_app(os.getenv('FLASK_CONFIG', 'default'))
 migrate = Migrate(app, db)
 
+app.logger.warning(f'starting at {os.getenv("PORT")}')
+
 
 @app.shell_context_processor
 def make_shell_context():
