@@ -271,11 +271,6 @@ def moderate_disable(id):
                             page=request.args.get('page', 1, type=int)))
 
 
-@main.before_app_request
-def before_request():
-    current_app.logger.warning(f'requests is secure? {request.is_secure}')
-
-
 @main.after_app_request
 def after_request(response):
     for query in get_debug_queries():
