@@ -3,7 +3,7 @@ import sys
 import click
 from app import create_app, db
 from app.models import User, Role, Permission, Post, Follow
-from flask_migrate import Migrate, upgrade
+from flask_migrate import Migrate, upgrade, stamp
 from werkzeug.serving import run_simple
 
 
@@ -72,7 +72,11 @@ def profile(length, profile_dir):
 @app.cli.command()
 def deploy():
     """Run deployment tasks."""
-    upgrade()
+    try:
+        upgrade()
+    except:
+        db.create_all()
+        upgrade()
 
     Role.insert_roles()
     User.add_self_follows()
