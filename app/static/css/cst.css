@@ -1,0 +1,83 @@
+body {
+  font-family: 'Bahnschrift', 'Noto Sans CJK TC', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  width: 650px;
+  margin: 10px auto 20px auto;
+  border-spacing: 2px;
+  border-collapse: separate;
+}
+
+.head {
+  width: 100px;
+  background-color: #ffd09a;
+}
+
+.side {
+  background-color: #a6cdef;
+}
+
+.clsText {
+  font-size: 1.2em;
+  color: #003165;
+}
+
+th {
+  height: 30px;
+  background-color: #fff3d8;
+  width: 100px;
+  margin: 2px;
+  text-align: center;
+}
+
+td {
+  height: 75px;
+  background-color: #eeeeee;
+  margin: 2px;
+  text-align: center;
+}
+
+.room {
+  font-size: 0.8em;
+}
+
+.DS {
+  background-color: #d2f5c5;
+}
+
+.LA {
+  background-color: #c3edff;
+}
+
+.LDL {
+  background-color: #ffd6cc;
+}
+
+.ICN {
+  background-color: #d0faeb;
+}
+
+.ODE {
+  background-color: #e9ddff;
+}
+
+.FR {
+  background-color: #ffe8f4;
+}
+
+.PLZ {
+  background-color: #fff9c5;
+}
+
+.PP {
+  background-color: #ffe9cc;
+}
+
+.uncertain {
+  background-color: #ff7e7e;
+}

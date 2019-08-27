@@ -1,0 +1,7 @@
+.idea/
+__pycache__/
+tmp/
+profiler/
+
+*.sqlite
+*.log
