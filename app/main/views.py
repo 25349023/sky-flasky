@@ -272,9 +272,8 @@ def moderate_disable(id):
 
 
 @main.before_app_request
-def before_request(response):
+def before_request():
     current_app.logger.warning(f'requests is secure? {request.is_secure}')
-    return response
 
 
 @main.after_app_request
