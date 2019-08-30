@@ -25,6 +25,7 @@ coverage = "*"
 selenium = "*"
 flask-sslify = "*"
 gunicorn = "*"
+pymysql = "*"
 
 
 [requires]

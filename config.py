@@ -81,11 +81,25 @@ class HerokuConfig(ProductionConfig):
         app.logger.addHandler(file_handler)
 
 
+class DockerConfig(ProductionConfig):
+    @classmethod
+    def init_app(cls, app):
+        super().init_app(app)
+
+        import logging
+        from logging import StreamHandler
+        file_handler = StreamHandler()
+        file_handler.setLevel(logging.INFO)
+        app.logger.addHandler(file_handler)
+
+
 config = {
     'development': DevelopmentConfig,
     'testing': TestingConfig,
     'production': ProductionConfig,
     'heroku': HerokuConfig,
+    'docker': DockerConfig,
+
     'default': DevelopmentConfig
 }
 
